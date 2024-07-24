@@ -3,3 +3,15 @@ body {
     text-align: center;
     margin-top: 50px;
 }
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse; /* Opcional: para colapsar los bordes de la tabla */
+}
+
+.center th, .center td {
+    border: 1px solid black; /* Opcional: para añadir bordes a las celdas */
+    padding: 8px; /* Opcional: para añadir espaciado dentro de las celdas */
+    text-align: center; /* Opcional: para centrar el texto dentro de las celdas */
+}
