@@ -1,11 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+h3, h4 {
+    color: #666;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
-    border-collapse: collapse; /* Opcional: para colapsar los bordes de la tabla */
 }
 
-.center th, .center td {
-    border: 1px solid black; /* Opcional: para añadir bordes a las celdas */
-    padding: 8px; /* Opcional: para añadir espaciado dentro de las celdas */
-    text-align: center; /* Opcional: para centrar el texto dentro de las celdas */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.tournament-bracket {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.matchup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.team {
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 5px 0;
+    width: 150px;
+}
+
+.round.champion .team {
+    font-weight: bold;
+    background-color: #ffd700;
 }
